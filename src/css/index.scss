@@ -1,0 +1,12 @@
+$brand-primary: #00D1F0;
+$body-bg: #333;
+$text-color: white;
+
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+html, body {
+  background-color: $body-bg;
+  color: $text-color;
+}
+
