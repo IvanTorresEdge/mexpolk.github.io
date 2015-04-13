@@ -1,0 +1,69 @@
+// Colors
+$white: #FFF;
+$black: #333;
+$gray: #777;
+
+$body-bg: $white;
+$brand-primary: $black;
+$text-color: $black;
+$text-muted: $gray;
+
+// Typography
+$font-size-base: 14px;
+$line-height-base: 1.5;
+$line-height-computed: floor(($font-size-base * $line-height-base));
+
+// Grid
+$gutter: 15px;
+
+// Borders
+$border-radius-base: 0;
+
+// Headings
+$headings-color: $black;
+$headings-font-weight: normal;
+
+// Labels
+$label-primary-bg: $text-color;
+$label-default-bg: $text-muted;
+
+// Links
+$link-hover-color: #222;
+
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+// Bootstrap overrides
+
+.label {
+  border-radius: 0;
+  font-weight: normal;
+}
+
+// Bootstrap additions
+
+.text-highlight { color: $black; }
+
+.text-overflow { @include text-overflow; }
+
+// Resume styling
+
+.skill .level {
+  color: #D1D1D1;
+
+  i { margin-right: 5px; }
+
+  &.level-beginner i:nth-child(-n+1) { color: $black; }
+  &.level-intermediate i:nth-child(-n+2) { color: $black; }
+  &.level-advanced i:nth-child(-n+3) { color: $black; }
+  &.level-expert i { color: $black; }
+
+  @media print {
+    i { display: none; }
+
+    &.level-beginner i:nth-child(-n+1) { display: inline-block; }
+    &.level-intermediate i:nth-child(-n+2) { display: inline-block; }
+    &.level-advanced i:nth-child(-n+3) { display: inline-block; }
+    &.level-expert i { display: inline-block; }
+  }
+}
