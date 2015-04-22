@@ -10,17 +10,20 @@ module.exports = {
       {
         label: 'LinkedIn',
         icon: 'fa-linkedin',
-        url: 'https://linked.in/in/mexpolk'
+        url: 'https://linked.in/in/mexpolk',
+        shortUrl: 'http://bit.ly/1OeUJA9'
       },
       {
         label: 'Github',
         icon: 'fa-github',
-        url: 'https://github.com/mexpolk'
+        url: 'https://github.com/mexpolk',
+        shortUrl: 'http://bit.ly/1Jcc4GE'
       },
       {
         label: 'Twitter',
         icon: 'fa-twitter',
-        url: 'https://twitter.com/mexpolk'
+        url: 'https://twitter.com/mexpolk',
+        shortUrl: 'http://bit.ly/1HVcekb'
       }
     ]
   },
@@ -34,7 +37,9 @@ module.exports = {
       company: 'Sprinklr',
       title: 'Engineering Manager, FPX',
       link: {
-        url: 'https://sprinklr.com'
+        label: 'https://sprinklr.com',
+        url: 'https://sprinklr.com',
+        shortUrl: 'http://on.fndgo.us/1HlrIi6'
       },
       start: '2015-04-01',
       goals: [
@@ -55,7 +60,9 @@ module.exports = {
       company: 'Get Satisfaction',
       title: 'Engineering Manager, Business Applications',
       link: {
-        url: 'https://getsatisfaction.com'
+        label: 'https://getsatisfaction.com',
+        url: 'https://getsatisfaction.com',
+        shortUrl: 'http://bit.ly/1FexikR'
       },
       start: '2011-04-01',
       end: '2014-03-31',

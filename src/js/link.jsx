@@ -12,7 +12,10 @@ module.exports = React.createClass({
       return (
         <div className="link text-overflow" style={css}>
           {this.renderLink()}
-          <span className="visible-print-inline">{this.props.shorten ? this.props.shortUrl : this.props.url }</span>
+          <span className="visible-print-inline">
+            {this.renderIcon()}
+            {this.props.shorten ? this.props.shortUrl : this.props.url}
+          </span>
         </div>
       );
     },
