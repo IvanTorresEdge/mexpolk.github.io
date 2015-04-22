@@ -33,7 +33,9 @@ module.exports = {
     {
       company: 'Sprinklr',
       title: 'Engineering Manager, FPX',
-      url: 'https://sprinklr.com',
+      link: {
+        url: 'https://sprinklr.com'
+      },
       start: '2015-04-01',
       goals: [
         {
@@ -41,7 +43,7 @@ module.exports = {
           type: 'promotion',
           date: '2015-04-01',
           link: {
-            label: 'http://techcrunch.com/2015/04/08/sprinklr-buys-get-satsifaction-to-add-customer-feedback-to-its-social-media-platform',
+            label: 'Read article',
             url: 'http://techcrunch.com/2015/04/08/sprinklr-buys-get-satsifaction-to-add-customer-feedback-to-its-social-media-platform',
             shortUrl: 'http://tcrn.ch/1DAbHxA',
             shorten: true
@@ -52,7 +54,9 @@ module.exports = {
     {
       company: 'Get Satisfaction',
       title: 'Engineering Manager, Business Applications',
-      url: 'https://getsatisfaction.com',
+      link: {
+        url: 'https://getsatisfaction.com'
+      },
       start: '2011-04-01',
       end: '2014-03-31',
       goals: [
@@ -61,7 +65,7 @@ module.exports = {
           type: 'release',
           date: '2013-08-13',
           link: {
-            label: 'https://getsatisfaction.com/getsatisfaction/topics/introducing_manage_workspace_the_new_application_for_business_users',
+            label: 'Read article',
             url: 'https://getsatisfaction.com/getsatisfaction/topics/introducing_manage_workspace_the_new_application_for_business_users',
             shortUrl: 'http://bit.ly/1PfuZ3Q',
             shorten: true
@@ -81,7 +85,7 @@ module.exports = {
           type: 'release',
           date: '2012-12-18',
           link: {
-            label: 'https://getsatisfaction.com/getsatisfaction/topics/new_product_getting_started_with_your_community_has_just_become_a_whole_lot_easier',
+            label: 'Read article',
             url: 'https://getsatisfaction.com/getsatisfaction/topics/new_product_getting_started_with_your_community_has_just_become_a_whole_lot_easier',
             shortUrl: 'http://bit.ly/1DAbM4D',
             shorten: true
@@ -100,7 +104,7 @@ module.exports = {
           title: 'Engage Widgets',
           type: 'release',
           link: {
-            label: 'http://blog.getsatisfaction.com/2012/05/01/get-satisfaction-engage-social-conversations-anywhere-your-customers-are',
+            label: 'Read article',
             url: 'http://blog.getsatisfaction.com/2012/05/01/get-satisfaction-engage-social-conversations-anywhere-your-customers-are',
             shortUrl: 'http://bit.ly/1yOcHCH',
             shorten: true
@@ -142,9 +146,6 @@ module.exports = {
           title: 'TweetyJobs (retired)',
           type: 'release',
           date: '2009-12-1',
-          link: {
-            label: 'http://tweetyjobs.com'
-          },
           description: 'Innovative platform for the MLM industry that provides easy to use tools for website design, content management, integrated blog and social media services, SEO, brand and content control to their distributors and customers. Built the integration with Twitter to process messages as commands to schedule job searches and/or job seekers using tweets as commands (backend).',
           stack: [
             'Ruby on Rails', 'JavaScript', 'MySQL', 'MongoDB'

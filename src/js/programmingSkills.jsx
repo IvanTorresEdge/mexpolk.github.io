@@ -36,10 +36,10 @@ module.exports = React.createClass({
       });
 
       return (
-        <div className="skill col-xs-6 col-sm-6">
+        <div className="skill col-xs-12 col-sm-6">
           <div className="row">
             <div className="col-xs-6 col-sm-6">
-              <small>{skill.name}</small>
+              <small className="text-overflow">{skill.name}</small>
             </div>
             <div className={className}>
               {

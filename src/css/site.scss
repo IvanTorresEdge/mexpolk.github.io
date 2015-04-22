@@ -30,6 +30,9 @@ $label-default-bg: $text-muted;
 // Links
 $link-hover-color: #222;
 
+// Container sizes
+$container-large-desktop: 970px;
+
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../../node_modules/font-awesome/scss/font-awesome";
 
@@ -47,6 +50,11 @@ $link-hover-color: #222;
 .text-overflow { @include text-overflow; }
 
 // Resume styling
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
 
 .skill .level {
   color: #D1D1D1;

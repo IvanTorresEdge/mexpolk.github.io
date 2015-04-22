@@ -59,9 +59,17 @@ module.exports = React.createClass({
           &nbsp;
           {goal.title}
         </h4>
-        <small><Link {...goal.link} /></small>
+        {this.renderGoalLink(goal)}
       </span>
     );
+  },
+
+  renderGoalLink: function (goal) {
+    if (goal.link) {
+      return (
+        <small><Link {...goal.link} /></small>
+      );
+    }
   },
 
   renderGoalTitleIcon: function (goal) {
@@ -87,6 +95,7 @@ module.exports = React.createClass({
           </h3>
           <p>
             <Link {...job.link} />
+            <br />
             <small>
               {moment(job.start).format(format)}
               &nbsp;-&nbsp;

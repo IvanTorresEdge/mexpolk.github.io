@@ -20,11 +20,11 @@ module.exports = React.createClass({
     return _.map(this.props.titles, function (title, i) {
       return (
         <li key={i}>
-          <p>
-            <span className="pull-right text-right">{title.year}</span>
-            <strong className="text-overflow">{title.title}</strong>
+          <p className="text-overflow">
+            <span className="pull-right text-right hidden-xs">{title.year}</span>
+            <strong>{title.title}</strong>
             <br />
-            <em className="text-overflow">{title.school}</em>
+            <em>{title.school}</em>
           </p>
         </li>
       );
